@@ -1,0 +1,9 @@
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleMono\bin\WindowsGL\Debug\SDL.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleMono\bin\WindowsGL\Debug\SimpleMono.exe
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleMono\bin\WindowsGL\Debug\SimpleMono.pdb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleMono\bin\WindowsGL\Debug\Lidgren.Network.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleMono\bin\WindowsGL\Debug\MonoGame.Framework.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleMono\bin\WindowsGL\Debug\OpenTK.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleMono\bin\WindowsGL\Debug\Tao.Sdl.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleMono\obj\x86\Debug\SimpleMono.exe
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleMono\obj\x86\Debug\SimpleMono.pdb

@@ -1,0 +1,12 @@
+﻿@model BookDemo.Models.Book
+
+<div>
+    <p>
+        <strong>Name</strong>
+        @Model.Name
+    </p>
+    <p>
+        <strong>Price</strong>
+        @String.Format("{0:F}", @Model.Price)
+    </p>
+</div>

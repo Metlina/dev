@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>METLINA-PC</Machine>
+    <WindowsUser>Tino</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>38ad9056-7f24-4eb6-985a-87a245de444e</PackageIdentityName>
+    <IntermediateOutputPath>c:\users\tino\documents\visual studio 2013\Projects\TipCalculatorUniversal\TipCalculatorUniversal\TipCalculatorUniversal.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>00A6695E030B4F38D036B79095927A796FEB1B7F1E35F4028547272C5B2D3F71</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>38ad9056-7f24-4eb6-985a-87a245de444e_1.0.0.0_neutral__9aftnbm8vwfdg</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>38ad9056-7f24-4eb6-985a-87a245de444e_9aftnbm8vwfdg!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>38ad9056-7f24-4eb6-985a-87a245de444e</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Tino</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\tino\documents\visual studio 2013\Projects\TipCalculatorUniversal\TipCalculatorUniversal\TipCalculatorUniversal.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-11-02T21:06:16.646</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\tino\documents\visual studio 2013\Projects\TipCalculatorUniversal\TipCalculatorUniversal\TipCalculatorUniversal.Windows\bin\Debug\TipCalculatorUniversal.Windows.exe">
+      <PackagePath>TipCalculatorUniversal.Windows.exe</PackagePath>
+      <Modified>2014-11-02T21:06:14.339</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tino\documents\visual studio 2013\Projects\TipCalculatorUniversal\TipCalculatorUniversal\TipCalculatorUniversal.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T08:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tino\documents\visual studio 2013\Projects\TipCalculatorUniversal\TipCalculatorUniversal\TipCalculatorUniversal.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T08:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tino\documents\visual studio 2013\Projects\TipCalculatorUniversal\TipCalculatorUniversal\TipCalculatorUniversal.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T08:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tino\documents\visual studio 2013\Projects\TipCalculatorUniversal\TipCalculatorUniversal\TipCalculatorUniversal.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T08:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tino\documents\visual studio 2013\Projects\TipCalculatorUniversal\TipCalculatorUniversal\TipCalculatorUniversal.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-11-02T21:02:36.708</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tino\documents\visual studio 2013\Projects\TipCalculatorUniversal\TipCalculatorUniversal\TipCalculatorUniversal.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2014-11-02T21:02:36.712</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tino\documents\visual studio 2013\Projects\TipCalculatorUniversal\TipCalculatorUniversal\TipCalculatorUniversal.Windows\bin\Debug\TipCalculatorUniversal.Windows.xr.xml">
+      <PackagePath>TipCalculatorUniversal.Windows.xr.xml</PackagePath>
+      <Modified>2014-11-02T21:02:36.692</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tino\documents\visual studio 2013\Projects\TipCalculatorUniversal\TipCalculatorUniversal\TipCalculatorUniversal.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-11-02T21:06:14.965</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

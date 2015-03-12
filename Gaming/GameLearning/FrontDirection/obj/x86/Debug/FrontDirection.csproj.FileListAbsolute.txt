@@ -1,0 +1,14 @@
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\FrontDirection\bin\WindowsGL\Debug\Content\Arial.xnb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\FrontDirection\bin\WindowsGL\Debug\Content\Insect.xnb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\FrontDirection\bin\WindowsGL\Debug\Content\Net.xnb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\FrontDirection\bin\WindowsGL\Debug\Content\Rocket.xnb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\FrontDirection\bin\WindowsGL\Debug\SDL.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\FrontDirection\bin\WindowsGL\Debug\FrontDirection.exe
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\FrontDirection\bin\WindowsGL\Debug\FrontDirection.pdb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\FrontDirection\bin\WindowsGL\Debug\Lidgren.Network.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\FrontDirection\bin\WindowsGL\Debug\MonoGame.Framework.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\FrontDirection\bin\WindowsGL\Debug\OpenTK.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\FrontDirection\bin\WindowsGL\Debug\Tao.Sdl.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\FrontDirection\obj\x86\Debug\FrontDirection.exe
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\FrontDirection\obj\x86\Debug\FrontDirection.pdb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\FrontDirection\obj\x86\Debug\FrontDirection.csprojResolveAssemblyReference.cache

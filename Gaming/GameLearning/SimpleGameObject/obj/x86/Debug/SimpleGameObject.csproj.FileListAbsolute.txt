@@ -1,0 +1,13 @@
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleGameObject\bin\WindowsGL\Debug\Content\Soccer.xnb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleGameObject\bin\WindowsGL\Debug\Content\Arial.xnb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleGameObject\bin\WindowsGL\Debug\Content\UWB-JPG.xnb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleGameObject\bin\WindowsGL\Debug\Content\UWB-PNG.xnb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleGameObject\bin\WindowsGL\Debug\SDL.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleGameObject\bin\WindowsGL\Debug\SimpleGameObject.exe
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleGameObject\bin\WindowsGL\Debug\SimpleGameObject.pdb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleGameObject\bin\WindowsGL\Debug\Lidgren.Network.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleGameObject\bin\WindowsGL\Debug\MonoGame.Framework.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleGameObject\bin\WindowsGL\Debug\OpenTK.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleGameObject\bin\WindowsGL\Debug\Tao.Sdl.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleGameObject\obj\x86\Debug\SimpleGameObject.exe
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\SimpleGameObject\obj\x86\Debug\SimpleGameObject.pdb

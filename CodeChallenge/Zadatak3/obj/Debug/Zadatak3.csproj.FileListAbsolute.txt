@@ -1,0 +1,5 @@
+c:\users\tino\documents\visual studio 2013\Projects\CodeChallenge\Zadatak3\bin\Debug\Zadatak3.exe.config
+c:\users\tino\documents\visual studio 2013\Projects\CodeChallenge\Zadatak3\bin\Debug\Zadatak3.exe
+c:\users\tino\documents\visual studio 2013\Projects\CodeChallenge\Zadatak3\bin\Debug\Zadatak3.pdb
+c:\users\tino\documents\visual studio 2013\Projects\CodeChallenge\Zadatak3\obj\Debug\Zadatak3.exe
+c:\users\tino\documents\visual studio 2013\Projects\CodeChallenge\Zadatak3\obj\Debug\Zadatak3.pdb

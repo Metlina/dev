@@ -1,0 +1,12 @@
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\GameObject\bin\WindowsGL\Debug\Content\Arial.xnb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\GameObject\bin\WindowsGL\Debug\SDL.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\GameObject\bin\WindowsGL\Debug\GameObject.exe
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\GameObject\bin\WindowsGL\Debug\GameObject.pdb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\GameObject\bin\WindowsGL\Debug\Lidgren.Network.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\GameObject\bin\WindowsGL\Debug\MonoGame.Framework.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\GameObject\bin\WindowsGL\Debug\OpenTK.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\GameObject\bin\WindowsGL\Debug\Tao.Sdl.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\GameObject\obj\x86\Debug\GameObject.exe
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\GameObject\obj\x86\Debug\GameObject.pdb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\GameObject\bin\WindowsGL\Debug\Content\Arrow.xnb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\GameLearning\GameObject\bin\WindowsGL\Debug\Content\Rocket.xnb

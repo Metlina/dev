@@ -1,0 +1,6 @@
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\ASP.NET\ComputerOrderForm\ComputerOrderForm\bin\ComputerOrderForm.dll.config
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\ASP.NET\ComputerOrderForm\ComputerOrderForm\bin\ComputerOrderForm.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\ASP.NET\ComputerOrderForm\ComputerOrderForm\bin\ComputerOrderForm.pdb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\ASP.NET\ComputerOrderForm\ComputerOrderForm\obj\Debug\ComputerOrderForm.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\ASP.NET\ComputerOrderForm\ComputerOrderForm\obj\Debug\ComputerOrderForm.pdb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\ASP.NET\ComputerOrderForm\ComputerOrderForm\obj\Debug\ComputerOrderForm.csprojResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+C:\Users\Tino\documents\visual studio 2013\Projects\ErasmusTVZ\PortableClassLibrary1\bin\Debug\PortableClassLibrary1.dll
+C:\Users\Tino\documents\visual studio 2013\Projects\ErasmusTVZ\PortableClassLibrary1\bin\Debug\PortableClassLibrary1.pdb
+C:\Users\Tino\documents\visual studio 2013\Projects\ErasmusTVZ\PortableClassLibrary1\obj\Debug\PortableClassLibrary1.csprojResolveAssemblyReference.cache
+C:\Users\Tino\documents\visual studio 2013\Projects\ErasmusTVZ\PortableClassLibrary1\obj\Debug\PortableClassLibrary1.dll
+C:\Users\Tino\documents\visual studio 2013\Projects\ErasmusTVZ\PortableClassLibrary1\obj\Debug\PortableClassLibrary1.pdb

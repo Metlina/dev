@@ -1,0 +1,70 @@
+﻿<Page
+    x:Class="Cinestar.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Cinestar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Row="0" 
+                    x:Name="TitlePanel" 
+                    Orientation="Horizontal" 
+                    Background="#b3d4fc" 
+                    VerticalAlignment="Top">
+            <TextBlock Text="CineStar" 
+                       Margin="12,0" 
+                       Style="{StaticResource TitleTextBlockStyle}" 
+                       FontSize="{StaticResource TextStyleExtraLargeFontSize}"></TextBlock>
+        </StackPanel>
+        <ScrollViewer Grid.Row="1">
+            <ListView x:ConnectionId='1' ScrollViewer.IsVerticalRailEnabled="True"
+                      ScrollViewer.VerticalScrollMode="Enabled"
+                      Name ="lssRss" ItemsSource="{Binding}"
+                      Margin="0,36,12,12"
+                                                                  >
+                
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal"
+                                    Margin="0,2,0,4"
+                                    Height="105"
+                                    Width="432">
+                            <TextBlock TextWrapping="Wrap"
+                                       Margin="12,0"
+                                       Text="{Binding Title}"
+                                       FontFamily="{StaticResource PhoneFontFamilySemiBold}"
+                                       FontSize="{StaticResource TextStyleLargeFontSize}"></TextBlock>
+                            <!--<TextBlock Margin="12,0"
+                                       Text="{Binding Director}"
+                                       FontFamily="{StaticResource PhoneFontFamilySemiBold}"
+                                       FontSize="{StaticResource TextStyleLargeFontSize}"></TextBlock>-->
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollViewer>
+    </Grid>
+    
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:ConnectionId='2'                           />
+            </CommandBar.PrimaryCommands>
+            <CommandBar.SecondaryCommands>
+                <AppBarToggleButton Label="about"/>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+    
+</Page>
+

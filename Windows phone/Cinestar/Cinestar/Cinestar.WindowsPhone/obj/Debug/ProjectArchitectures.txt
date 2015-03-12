@@ -1,0 +1,1 @@
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\Cinestar\Cinestar\Cinestar.WindowsPhone\Cinestar.WindowsPhone.csproj;neutral

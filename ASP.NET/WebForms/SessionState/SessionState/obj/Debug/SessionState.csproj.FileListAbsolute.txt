@@ -1,0 +1,6 @@
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\ASP.NET\SessionState\SessionState\bin\SessionState.dll.config
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\ASP.NET\SessionState\SessionState\bin\SessionState.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\ASP.NET\SessionState\SessionState\bin\SessionState.pdb
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\ASP.NET\SessionState\SessionState\obj\Debug\SessionState.csprojResolveAssemblyReference.cache
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\ASP.NET\SessionState\SessionState\obj\Debug\SessionState.dll
+C:\Users\Tino\Documents\Visual Studio 2013\Projects\ASP.NET\SessionState\SessionState\obj\Debug\SessionState.pdb

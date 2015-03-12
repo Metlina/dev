@@ -1,0 +1,6 @@
+c:\users\tino\documents\visual studio 2013\Projects\CodeChallenge\Zadatak2\bin\Debug\Zadatak2.exe.config
+c:\users\tino\documents\visual studio 2013\Projects\CodeChallenge\Zadatak2\bin\Debug\Zadatak2.exe
+c:\users\tino\documents\visual studio 2013\Projects\CodeChallenge\Zadatak2\bin\Debug\Zadatak2.pdb
+c:\users\tino\documents\visual studio 2013\Projects\CodeChallenge\Zadatak2\obj\Debug\Zadatak2.exe
+c:\users\tino\documents\visual studio 2013\Projects\CodeChallenge\Zadatak2\obj\Debug\Zadatak2.pdb
+c:\users\tino\documents\visual studio 2013\Projects\CodeChallenge\Zadatak2\obj\Debug\Zadatak2.csprojResolveAssemblyReference.cache
