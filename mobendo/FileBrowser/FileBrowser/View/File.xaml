@@ -1,0 +1,69 @@
+﻿<Page
+    x:Class="FileBrowser.View.File"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModel="using:FileBrowser.ViewModel"
+    xmlns:h="using:FileBrowser"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    d:DataContext="{d:DesignInstance viewModel:ItemViewModel}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="StackPanel"
+                    Grid.Row="0">
+            <TextBlock x:Name="TextBlock"
+                       Text="File browser : File"
+                       TextAlignment="Center"
+                       Style="{StaticResource SubheaderTextBlockStyle}">
+            </TextBlock>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <ScrollViewer ZoomMode="Enabled"
+                          MinZoomFactor="1"
+                          >
+                <Image Name="Image"></Image>
+            </ScrollViewer>
+            <!--<ScrollViewer x:Name="scrl"
+                          ZoomMode="Enabled"
+                          HorizontalScrollMode="Enabled"
+                          VerticalScrollMode="Enabled"
+                          HorizontalScrollBarVisibility="Visible"
+                          VerticalScrollBarVisibility="Visible"
+                          SizeChanged="Scrl_OnSizeChanged"
+                          MinZoomFactor="1">
+                <Canvas MaxWidth="300"
+                        Background="AliceBlue"
+                        RenderTransformOrigin="0.5,0.5"
+                        x:Name="Main"
+                        DoubleTapped="Main_OnDoubleTapped">
+                    <Image Name="image"
+                           />
+                </Canvas>
+            </ScrollViewer>-->
+            <!--<Image Name="image" 
+                   h:Alt.IsNotVisible="{Binding PicOrVideo}"
+                   ManipulationMode="All"
+                   ManipulationStarted="Image_OnManipulationStarted"
+                   ManipulationDelta="Image_OnManipulationDelta"
+                   />-->
+            <MediaElement Name="VideoMediaElement" 
+                          />
+        </Grid>
+    </Grid>
+    
+    <Page.BottomAppBar>
+        <CommandBar ClosedDisplayMode="Minimal">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton></AppBarButton>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+    
+</Page>
