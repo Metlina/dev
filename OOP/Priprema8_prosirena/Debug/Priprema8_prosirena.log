@@ -1,11 +1,7 @@
-﻿Build started 13-Jun-14 10:31:34 AM.
-     1>Project "C:\Users\Tino\Documents\Visual Studio 2013\Projects\Vjezba1\Priprema8_prosirena\Priprema8_prosirena.vcxproj" on node 2 (Build target(s)).
-     1>Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Tino\Documents\Visual Studio 2013\Projects\Vjezba1\Debug\Priprema8_prosirena.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Tino\Documents\Visual Studio 2013\Projects\Vjezba1\Debug\Priprema8_prosirena.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Tino\Documents\Visual Studio 2013\Projects\Vjezba1\Debug\Priprema8_prosirena.lib" /MACHINE:X86 Debug\Crtanka.obj
-     1>MSVCRTD.lib(crtexe.obj) : error LNK2019: unresolved external symbol _main referenced in function ___tmainCRTStartup
-     1>C:\Users\Tino\Documents\Visual Studio 2013\Projects\Vjezba1\Debug\Priprema8_prosirena.exe : fatal error LNK1120: 1 unresolved externals
-     1>Done Building Project "C:\Users\Tino\Documents\Visual Studio 2013\Projects\Vjezba1\Priprema8_prosirena\Priprema8_prosirena.vcxproj" (Build target(s)) -- FAILED.
-
-Build FAILED.
-
-Time Elapsed 00:00:01.45
+﻿  Crtanka.cpp
+d:\dev2\oop\priprema8_prosirena\crtanka.cpp(176): warning C4018: '<': signed/unsigned mismatch
+d:\dev2\oop\priprema8_prosirena\crtanka.cpp(180): warning C4018: '<': signed/unsigned mismatch
+d:\dev2\oop\priprema8_prosirena\crtanka.cpp(216): warning C4018: '<': signed/unsigned mismatch
+d:\dev2\oop\priprema8_prosirena\crtanka.cpp(66): warning C4715: 'Crtanka::getBoja': not all control paths return a value
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+D:\dev2\OOP\Debug\Priprema8_prosirena.exe : fatal error LNK1120: 1 unresolved externals

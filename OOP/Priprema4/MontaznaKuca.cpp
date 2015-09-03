@@ -2,6 +2,12 @@
 
 MontaznaKuca::MontaznaKuca(void)
 {
+	this->kvadratura = 0;
+	this ->bojaFasade = "";
+	this->vlasnik = "";
+	postojiVrt = false;
+	this->kuhinja = new Kuhinja;
+	this->sobe.reserve(0);
 }
 MontaznaKuca::MontaznaKuca(double kvadratura, string bojaFasade, string imaVrt)
 {

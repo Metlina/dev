@@ -1,20 +1,19 @@
-﻿Build started 13-Jun-14 10:31:29 AM.
-     1>Project "C:\Users\Tino\Documents\Visual Studio 2013\Projects\Vjezba1\Priprema7\Priprema7.vcxproj" on node 4 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Posta.cpp Postar.cpp Primatelj.cpp
-         Primatelj.cpp
-     1>c:\users\tino\documents\visual studio 2013\projects\vjezba1\priprema7\primatelj.cpp(4): error C2512: 'Osoba' : no appropriate default constructor available
-         Postar.cpp
-     1>c:\users\tino\documents\visual studio 2013\projects\vjezba1\priprema7\postar.cpp(5): error C2512: 'Osoba' : no appropriate default constructor available
-         Posta.cpp
-         Generating Code...
-     1>c:\users\tino\documents\visual studio 2013\projects\vjezba1\priprema7\posta.cpp(15): error C4716: 'Posta::dodajPrimatelja' : must return a value
-     1>c:\users\tino\documents\visual studio 2013\projects\vjezba1\priprema7\posta.cpp(12): error C4716: 'Posta::dodajPostara' : must return a value
-     1>c:\users\tino\documents\visual studio 2013\projects\vjezba1\priprema7\posta.cpp(28): error C4716: 'Posta::getNajboljiPostari' : must return a value
-     1>c:\users\tino\documents\visual studio 2013\projects\vjezba1\priprema7\posta.cpp(31): error C4716: 'Posta::getListaIsporuka' : must return a value
-     1>c:\users\tino\documents\visual studio 2013\projects\vjezba1\priprema7\posta.cpp(34): error C4716: 'Posta::getListaNedostavljenih' : must return a value
-     1>Done Building Project "C:\Users\Tino\Documents\Visual Studio 2013\Projects\Vjezba1\Priprema7\Priprema7.vcxproj" (Build target(s)) -- FAILED.
-
-Build FAILED.
-
-Time Elapsed 00:00:06.37
+﻿  Primatelj.cpp
+d:\dev2\oop\priprema7\primatelj.cpp(4): error C2512: 'Osoba': no appropriate default constructor available
+  d:\dev2\oop\priprema7\osoba.h(6): note: see declaration of 'Osoba'
+  Postar.cpp
+d:\dev2\oop\priprema7\postar.cpp(5): error C2512: 'Osoba': no appropriate default constructor available
+  d:\dev2\oop\priprema7\osoba.h(6): note: see declaration of 'Osoba'
+  Posta.cpp
+  Paket.cpp
+  Osoba.cpp
+  main.cpp
+d:\dev2\oop\priprema7\main.cpp(48): warning C4018: '<': signed/unsigned mismatch
+d:\dev2\oop\priprema7\main.cpp(53): warning C4018: '<': signed/unsigned mismatch
+d:\dev2\oop\priprema7\main.cpp(60): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+d:\dev2\oop\priprema7\posta.cpp(12): error C4716: 'Posta::dodajPostara': must return a value
+d:\dev2\oop\priprema7\posta.cpp(28): error C4716: 'Posta::getNajboljiPostari': must return a value
+d:\dev2\oop\priprema7\posta.cpp(31): error C4716: 'Posta::getListaIsporuka': must return a value
+d:\dev2\oop\priprema7\posta.cpp(34): error C4716: 'Posta::getListaNedostavljenih': must return a value
+d:\dev2\oop\priprema7\posta.cpp(15): error C4716: 'Posta::dodajPrimatelja': must return a value

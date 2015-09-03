@@ -1,25 +1,10 @@
-﻿Build started 04-Jun-14 4:41:30 PM.
-     1>Project "C:\Users\Tino\Documents\Visual Studio 2013\Projects\Vjezba1\Priprema8\Priprema8.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Crtanka.cpp GeomLik.cpp Kvadrat.cpp main.cpp Pravokutnik.cpp
-         Pravokutnik.cpp
-         main.cpp
-         Kvadrat.cpp
-         GeomLik.cpp
-         Crtanka.cpp
-     1>c:\users\tino\documents\visual studio 2013\projects\vjezba1\priprema8\crtanka.cpp(21): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\tino\documents\visual studio 2013\projects\vjezba1\priprema8\crtanka.cpp(29): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\tino\documents\visual studio 2013\projects\vjezba1\priprema8\crtanka.cpp(39): warning C4018: '<' : signed/unsigned mismatch
-         Generating Code...
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Tino\Documents\Visual Studio 2013\Projects\Vjezba1\Debug\Priprema8.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Tino\Documents\Visual Studio 2013\Projects\Vjezba1\Debug\Priprema8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Tino\Documents\Visual Studio 2013\Projects\Vjezba1\Debug\Priprema8.lib" /MACHINE:X86 Debug\Crtanka.obj
-         Debug\GeomLik.obj
-         Debug\Kvadrat.obj
-         Debug\main.obj
-         Debug\Pravokutnik.obj
-         Priprema8.vcxproj -> C:\Users\Tino\Documents\Visual Studio 2013\Projects\Vjezba1\Debug\Priprema8.exe
-     1>Done Building Project "C:\Users\Tino\Documents\Visual Studio 2013\Projects\Vjezba1\Priprema8\Priprema8.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:05.43
+﻿  Pravokutnik.cpp
+  main.cpp
+  Kvadrat.cpp
+  GeomLik.cpp
+  Crtanka.cpp
+d:\dev2\oop\priprema8\crtanka.cpp(21): warning C4018: '<': signed/unsigned mismatch
+d:\dev2\oop\priprema8\crtanka.cpp(29): warning C4018: '<': signed/unsigned mismatch
+d:\dev2\oop\priprema8\crtanka.cpp(39): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Priprema8.vcxproj -> D:\dev2\OOP\Debug\Priprema8.exe

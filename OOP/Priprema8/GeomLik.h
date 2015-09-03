@@ -7,6 +7,10 @@ protected:
 	char boja;
 	int brojStranica;
 public:
+	virtual ~GeomLik()
+	{
+	}
+
 	GeomLik(char boja, int brojStranica) :boja(boja), brojStranica(brojStranica) { }
 
 	int getBrojStranica() { return brojStranica; }
