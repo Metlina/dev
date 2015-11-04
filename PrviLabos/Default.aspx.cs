@@ -8,7 +8,10 @@ public partial class _Default : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (User.Identity.IsAuthenticated == false)
+        {
+            Response.Redirect("Login.aspx");
+        }
     }
 
     protected void Btn_Click(object sender, EventArgs e)
@@ -93,8 +96,8 @@ public partial class _Default : System.Web.UI.Page
         dateTimeTbox.Text = DateTime.Now.ToString();
     }
 
-    private void PopulateList()
+    protected void logOutBtn_OnClick(object sender, EventArgs e)
     {
-        
+        Response.Redirect("Login.aspx");
     }
 }

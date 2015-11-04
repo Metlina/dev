@@ -5,60 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Calculus 001</title>
-    <style>
-        body {
-            font-family: Segou UI;
-            margin: 0 auto;
-            width: 50%;
-        }
-
-        h1 {
-            text-align: center;
-            color: #BF40FF;
-        }
-
-        h2 {
-            text-align: left;
-            color: #BF40FF;
-            margin-left: 50px;
-        }
-
-        #body {
-            background-color: #9C9C9C;
-        }
-
-        .myLabel {
-            color: #4B61DE;
-            margin-left: 20px;
-            margin-top: 20px;
-            margin-right: 20px;
-            margin-bottom: 20px;
-            padding: 10px;
-        }
-
-        .btnStyle {
-            margin-left: 30px;
-            padding: 10px;
-            background-color: #4b61de;
-            border-color: #4b61de;
-        }
-
-        .tboxStyle {
-            padding: 10px;
-        }
-
-        .errorMessage {
-            padding: 10px;
-            font-size: 40px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="Style.css"/>
 </head>
 <body>
     <form id="form1" runat="server">
         <div id="body">
 
             <h1>Calculus 001</h1>
-
+            
             <div id="content">
 
                 <div id="firstNumber">
@@ -145,7 +99,6 @@
                     <asp:DropDownList ID="dropDownList"
                         runat="server"
                         Width="200px">
-                        <%--<asp:ModelDataSource id="inputList"/>--%>
                         <asp:ListItem Text="Select Input" Value="0"></asp:ListItem>
                         <asp:ListItem Text="First Number" Value="1"></asp:ListItem>
                         <asp:ListItem Text="Second Number" Value="2"></asp:ListItem>
@@ -203,6 +156,8 @@
                 <div>
                     <h2><a href="AboutMe.aspx">Go to about me</a></h2>
                 </div>
+                
+                <asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Log In" LogoutText="Log Out" />
 
                 <br />
                 <br />
