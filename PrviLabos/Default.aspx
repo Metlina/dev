@@ -157,9 +157,14 @@
                     <h2><a href="AboutMe.aspx">Go to about me</a></h2>
                 </div>
                 
+                <div>
+                    <h3><a href="Tablica.aspx">Go to table page</a></h3>
+                </div>
+                
                 <asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Log In" LogoutText="Log Out" />
 
                 <br />
+                <asp:LoginName ID="LoginName2" runat="server" />
                 <br />
                 <br />
             </div>

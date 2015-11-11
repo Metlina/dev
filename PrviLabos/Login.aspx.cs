@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Configuration;
+using System.Data.OleDb;
+using System.Diagnostics;
 using System.Web.UI.WebControls;
 
 public partial class Login : System.Web.UI.Page
@@ -14,19 +16,30 @@ public partial class Login : System.Web.UI.Page
 
     protected void Login1_OnAuthenticate(object sender, AuthenticateEventArgs e)
     {
-        if (Login1.Password == ConfigurationManager.AppSettings["Password"] &&
-            Login1.UserName == ConfigurationManager.AppSettings["User"])
+        using (
+            var connection = new OleDbConnection(ConfigurationManager.ConnectionStrings["konekcijaNaBazu"].ConnectionString)
+            )
         {
-            e.Authenticated = true;
-        }
-        else
-        {
-            e.Authenticated = false;
+            try
+            {
+                connection.Open();
+                var query = new OleDbCommand("SELECT * FROM users WHERE username=@ime AND password=@lozinka", connection);
+
+                query.Parameters.AddWithValue("@ime", Login1.UserName);
+                query.Parameters.AddWithValue("@password", Login1.Password);
+
+                var dataReader = query.ExecuteReader();
+
+                while (dataReader.Read())
+                {
+                    if (dataReader.GetString(0) == Login1.UserName &&
+                        dataReader.GetString(1) == Login1.Password)
+                        e.Authenticated = true;
+                }
+
+                dataReader.Close();
+            }
+            catch (Exception) { }
         }
     }
-
-    //protected void Login1_OnLoggedIn(object sender, EventArgs e)
-    //{
-    //    Response.Redirect("Default.aspx");
-    //}
 }
