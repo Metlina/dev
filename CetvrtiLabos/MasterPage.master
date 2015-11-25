@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+            <ul>
+                <li><a href="Default.aspx">Calculus</a></li>
+                <li><a href="http://www.tvz.hr/" target="_blank">TVZ</a></li>
+                <li><a href="AboutMe.aspx">About me</a></li>
+                <li><a href="Tablica.aspx">Tablica</a></li>
+                <li><asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Log In" LogoutText="Log Out" /></li>
+            </ul>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

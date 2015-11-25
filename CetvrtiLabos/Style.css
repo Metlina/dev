@@ -1,0 +1,60 @@
+﻿body {
+    font-family: Segou UI;
+    margin: 0 auto;
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+    color: #BF40FF;
+}
+
+h2 {
+    text-align: left;
+    color: #BF40FF;
+    margin-left: 50px;
+}
+
+h3 {
+    text-align: right;
+    color: #da70d6;
+    margin-right: 50px;
+}
+
+#body {
+    background-color: #9C9C9C;
+}
+
+.myLabel {
+    color: #4B61DE;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.btnStyle {
+    margin-left: 30px;
+    padding: 10px;
+    background-color: #4b61de;
+    border-color: #4b61de;
+}
+
+.tboxStyle {
+    padding: 10px;
+}
+
+.errorMessage {
+    padding: 10px;
+    font-size: 40px;
+}
+
+#logOutBtn {
+    position: absolute;
+    right: 337px;
+    top: 9px;
+    color: Red;
+    background-color: #4b61de;
+    border-color: #4b61de;
+}
