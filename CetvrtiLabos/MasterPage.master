@@ -6,6 +6,7 @@
 <head runat="server">
 
     <link rel="stylesheet" type="text/css" href="Style.css" />
+    <script type="text/javascript" src="Scripts.js"></script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -14,12 +15,16 @@
     <form id="form1" runat="server">
 
         <div>
+            <img class="logo" src="Assets/M-tvz-150x118.png"/>
             <ul>
                 <li><a href="Default.aspx">Calculus</a></li>
                 <li><a href="http://www.tvz.hr/" target="_blank">TVZ</a></li>
                 <li><a href="AboutMe.aspx">About me</a></li>
+                <li><a href="Download.aspx">Download</a></li>
                 <li><a href="Tablica.aspx">Tablica</a></li>
-                <li><asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Log In" LogoutText="Log Out" /></li>
+                <li><input type="button" class="buttonShowName" onclick="showName('<%=HttpContext.Current.User.Identity.Name%>');" value="Who am I?" /></li>
+                <li><asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Log In" LogoutText="Log Out" OnClick="return logoutConfirm();"/></li>
+                
             </ul>
 
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
