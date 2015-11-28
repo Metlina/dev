@@ -22,6 +22,7 @@
                 <li><a href="AboutMe.aspx">About me</a></li>
                 <li><a href="Download.aspx">Download</a></li>
                 <li><a href="Tablica.aspx">Tablica</a></li>
+                <li><a href="SlideShow.aspx">Slide Show</a></li>
                 <li><input type="button" class="buttonShowName" onclick="showName('<%=HttpContext.Current.User.Identity.Name%>');" value="Who am I?" /></li>
                 <li><asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Log In" LogoutText="Log Out" OnClick="return logoutConfirm();"/></li>
                 
