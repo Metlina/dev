@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <ul>
+                <li><a href="Default.aspx">Default</a></li>
+                <li>
+                    <asp:LoginName ID="LoginName1" runat="server" FormatString="User : {0}" />
+                </li>
+                <li>
+                    <asp:LoginStatus ID="LoginStatus1" CssClass="LoginStatus1" runat="server" LoginText="Login" LogoutText="Logout" />
+                </li>
+            </ul>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
