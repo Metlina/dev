@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class Main {
 
-    public static final int NUMBER_OF_EVOLUTIONS = 100;
+    public static final int NUMBER_OF_EVOLUTIONS = 50;
     public static final int POPULATION_SIZE = 5000;
 
     public static void main (String[] args) {
@@ -25,10 +25,10 @@ public class Main {
         Configuration conf = new DefaultConfiguration();
 
         try {
-            conf.addGeneticOperator(new CrossoverOperator(conf));
             conf.addGeneticOperator(new MutationOperator(conf));
+            conf.addGeneticOperator(new AveragingCrossoverOperator(conf));
             conf.setKeepPopulationSizeConstant(true);
-            conf.setPreservFittestIndividual(true);
+            conf.setPreservFittestIndividual(false);
             conf.setFitnessFunction(fitnessFunction);
 
             Gene[] genes = new Gene[crossroad.size()];
@@ -64,6 +64,25 @@ public class Main {
         catch (InvalidConfigurationException ex) {
             ex.printStackTrace();
         }
+
+        //System.out.println("Calling brute");
+        //callBrute();
+    }
+
+    private static void callBrute() {
+        char[] alphabet = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+                'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
+                'V', 'W', 'X', 'Y', 'Z'};
+
+        //char[] myArray = {'K', 'L', 'U', 'B', 'R', 'A','D', 'A', 'A', 'R', 'A', 'K','J', 'A', 'V', 'A'};
+        char[] myArray = {'K', 'L', 'U', 'B', 'R', 'A'};
+        String tmp = "";
+        for(char chr : myArray){
+            tmp += chr;
+        }
+        long timeStart = System.currentTimeMillis();
+        Brute.possibleStrings(myArray.length, alphabet, "", tmp);
+        System.out.println("Brute time : " + (Brute.timeEnd - timeStart));
     }
 
     private static void printSolution(IChromosome solution, int length) {
