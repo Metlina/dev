@@ -1,6 +1,0 @@
-c:\users\tino\documents\visual studio 2013\Projects\JavaLabosiUCsharp\JavaLabosiUCsharp\obj\Debug\Petrina-1.csprojResolveAssemblyReference.cache
-c:\users\tino\documents\visual studio 2013\Projects\JavaLabosiUCsharp\JavaLabosiUCsharp\bin\Debug\JavaLabosiUCsharp.exe.config
-c:\users\tino\documents\visual studio 2013\Projects\JavaLabosiUCsharp\JavaLabosiUCsharp\bin\Debug\JavaLabosiUCsharp.exe
-c:\users\tino\documents\visual studio 2013\Projects\JavaLabosiUCsharp\JavaLabosiUCsharp\bin\Debug\JavaLabosiUCsharp.pdb
-c:\users\tino\documents\visual studio 2013\Projects\JavaLabosiUCsharp\JavaLabosiUCsharp\obj\Debug\JavaLabosiUCsharp.exe
-c:\users\tino\documents\visual studio 2013\Projects\JavaLabosiUCsharp\JavaLabosiUCsharp\obj\Debug\JavaLabosiUCsharp.pdb
