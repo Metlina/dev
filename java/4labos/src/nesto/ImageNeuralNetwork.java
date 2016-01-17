@@ -266,7 +266,7 @@ public class ImageNeuralNetwork {
 		final int strategyCycles = Integer.parseInt(strStrategyCycles);
 
 		//propagation klasa
-		final Backpropagation train = new Backpropagation(this.network, this.training);
+		final ResilientPropagation train = new ResilientPropagation(this.network, this.training);
 		train.addStrategy(new ResetStrategy(strategyError, strategyCycles));
 
 		if (strMode.equalsIgnoreCase("gui")) {

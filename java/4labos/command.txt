@@ -1,4 +1,4 @@
-CreateTraining: width:3,height:2,type:RGB
+CreateTraining: width:11,height:11,type:RGB
 Input: image:slika0.jpg, identity:0
 Input: image:slika1.jpg, identity:9
 Input: image:slika2.jpg, identity:8
@@ -120,8 +120,8 @@ Input: image:slika117.jpg, identity:-
 Input: image:slika118.jpg, identity:8
 Input: image:slika119.jpg, identity:2
 Input: image:slika120.jpg, identity:6
-Network: hidden1:12, hidden2:9
-Train: Mode:console, Minutes:5, StrategyError:0.5,StrategyCycles:150
+Network: hidden1:78, hidden2:27
+Train: Mode:console, Minutes:1, StrategyError:0.5,StrategyCycles:150
 Whatis: image:capture2test.PNG
 Whatis: image:BodoniMT095741506.PNG
 Whatis: image:Capture225961.PNG

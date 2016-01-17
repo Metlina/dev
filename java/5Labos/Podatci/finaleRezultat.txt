@@ -1,0 +1,2 @@
+Input: 0,9897; 0,7257; 0,9521; 0,9138; 0,9237; 0,9252; 0,9941; 0,8537;  Output: 1; 0; 0; Desired output: 1; 0; 0;  Error: 0; 0; 0; 
+Total Mean Square Error: 1.303448600128694E-35
