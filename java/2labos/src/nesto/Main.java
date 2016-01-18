@@ -13,21 +13,16 @@ import org.jgap.Genotype;
 import org.jgap.IChromosome;
 import org.jgap.InvalidConfigurationException;
 import org.jgap.Population;
-import org.jgap.impl.AveragingCrossoverOperator;
-import org.jgap.impl.CrossoverOperator;
-import org.jgap.impl.DefaultConfiguration;
-import org.jgap.impl.GaussianMutationOperator;
-import org.jgap.impl.IntegerGene;
-import org.jgap.impl.MutationOperator;
+import org.jgap.impl.*;
 
 /**
  * Created by tinop on 17.1.2016..
  */
 public class Main {
 
-    public static final int NUMBER_OF_EVOLUTIONS = 10;
-    public static final int POPULATION_SIZE = 10;
-    public static final int BROJ_SEGMENATA = 4;
+    public static final int NUMBER_OF_EVOLUTIONS = 100;
+    public static final int POPULATION_SIZE = 150;
+    public static final int BROJ_SEGMENATA = 9;
 
     public static void main(String[] args) {
         int velSeg = 0;
@@ -38,47 +33,17 @@ public class Main {
             System.out.println("Nepravilan oblik sudoku krizaljke!");
         }
 
-		 /* int[][] sudoku = new int[][] {
-
-		  { 7, 6, 5, 3, 8, 4, 1, 2, 9 },
-		  { 9, 3, 2, 7, 1, 5, 4, 6, 8 },
-		  { 8, 4, 1, 2, 9, 6, 3, 5, 7 },
-		  { 6, 2, 7, 8, 3, 1, 5, 9, 4 },
-		  { 1, 5, 9, 4, 6, 7, 8, 3, 2 },
-		  { 3, 8, 4, 5, 2, 9, 6, 7, 1 },
-		  { 5, 1, 3, 9, 7, 8, 2, 4, 6 },
-		  { 4, 9, 8, 6, 5, 2, 7, 1, 3 },
-		  { 2, 7, 6, 1, 4, 3, 9, 8, 5 }
-
-		  };*/
-        int[][] sudoku = new int[][] {
-
-                { 4,1,3,2 },
-                { 3,2,4,1 },
-                { 1,4,2,3 },
-                { 2,3,1,4 }
-
-        };
-		/*int[][] sudoku = new int[][] {
-
-				{ 7, 8, 4, 16, 9, 1, 12, 3, 10, 11, 5, 14, 13, 2, 6, 15 },
-				{ 5, 13, 15, 3, 2, 6, 14, 16, 8, 1, 9, 7, 10, 12, 11, 4 },
-				{ 2, 12, 11, 14, 4, 10, 7, 8, 3, 6, 13, 15, 1, 16, 5, 9 },
-				{ 1, 9, 10, 6, 11, 13, 15, 5, 16, 2, 4, 12, 7, 8, 3, 14 },
-				{ 6, 4, 9, 8, 13, 12, 10, 15, 14, 16, 3, 2, 11, 1, 7, 5 },
-				{ 14, 15, 16, 11, 1, 7, 6, 9, 4, 12, 8, 5, 3, 10, 2, 13 },
-				{ 12, 1, 2, 7, 8, 5, 3, 11, 15, 9, 10, 13, 16, 4, 14, 6 },
-				{ 10, 3, 5, 13, 16, 2, 4, 14, 1, 7, 11, 6, 15, 9, 8, 12 },
-				{ 13, 7, 12, 4, 3, 16, 11, 2, 6, 5, 1, 8, 9, 14, 16, 10 },
-				{ 15, 16, 8, 2, 6, 4, 13, 10, 9, 3, 14, 11, 12, 5, 1, 7 },
-				{ 3, 10, 14, 1, 15, 9, 5, 7, 2, 13, 12, 16, 6, 11, 4, 8 },
-				{ 11, 5, 6, 9, 14, 8, 1, 12, 7, 4, 15, 10, 2, 3, 13, 16 },
-				{ 16, 14, 7, 5, 12, 11, 2, 4, 13, 10, 6, 3, 8, 15, 9, 1 },
-				{ 8, 11, 1, 10, 7, 15, 9, 6, 12, 14, 2, 4, 5, 13, 16, 3 },
-				{ 9, 6, 3, 12, 5, 14, 8, 13, 11, 15, 16, 1, 4, 7, 10, 2 },
-				{ 4, 2, 13, 15, 10, 3, 16, 1, 5, 8, 7, 9, 14, 6, 12, 11 }
-
-		};*/
+		 int[][] sudoku = new int[][] {
+		    { 7, 6, 5, 3, 8, 4, 1, 2, 9 },
+		    { 9, 3, 2, 7, 1, 5, 4, 6, 8 },
+		    { 8, 4, 1, 2, 9, 6, 3, 5, 7 },
+		    { 6, 2, 7, 8, 3, 1, 5, 9, 4 },
+		    { 1, 5, 9, 4, 6, 7, 8, 3, 2 },
+		    { 3, 8, 4, 5, 2, 9, 6, 7, 1 },
+		    { 5, 1, 3, 9, 7, 8, 2, 4, 6 },
+		    { 4, 9, 8, 6, 5, 2, 7, 1, 3 },
+		    { 2, 7, 6, 1, 4, 3, 9, 8, 5 }
+	    };
 
         try {
             // DODAVANJE SEGMENATA U SET
@@ -125,20 +90,8 @@ public class Main {
                 j++;
             }
 
-            // ISPIS PRAVILNE I IZMJESANE SUDOKU LISTE
-			/*
-			 * System.out.println("Izmjesana:"); for (SudokuSegment seg:
-			 * segmentPoljeIzmjesano) seg.ispisiSegment();
-			 *
-			 * System.out.println();
-			 *
-			 * System.out.println("Pravilna:"); for (SudokuSegment seg:
-			 * segmentPoljePravilno) seg.ispisiSegment();
-			 */
-
             // DEFINIRANJE RANDOM POPULACIJE
-            SudokuFitness sudokuFitness = new SudokuFitness(
-                    segmentPoljePravilno);
+            SudokuFitness sudokuFitness = new SudokuFitness(segmentPoljePravilno);
             SudokuSegmentConfiguration sudokuSegmentConfiguration = new SudokuSegmentConfiguration();
 
             sudokuSegmentConfiguration.setFitnessFunction(sudokuFitness);
@@ -161,16 +114,22 @@ public class Main {
 
                 FitnessFunction segmentFit = new SudokuSegmentFitness(segmentPoljePravilno[k].getSegment(), segmentPoljePravilno[k].getRedniBrojSegmenta());
 
+                //postavke
                 Configuration.reset();
                 Configuration conf = new DefaultConfiguration();
-                // conf.addGeneticOperator(new CrossoverOperator(conf));
-                GaussianMutationOperator mu = new GaussianMutationOperator(conf);
-                //MutationOperator mu = new MutationOperator(conf);
-                //mu.setMutationRate(2);
-                conf.addGeneticOperator(mu);
-                conf.addGeneticOperator(new CrossoverOperator(conf));
-                conf.setKeepPopulationSizeConstant(false);
-                conf.setPreservFittestIndividual(true);
+                //operator mutacije
+                //GaussianMutationOperator mutationOperator = new GaussianMutationOperator(conf);
+                SwappingMutationOperator mutationOperator = new SwappingMutationOperator(conf);
+                //MutationOperator mutationOperator = new MutationOperator(conf);
+                //SudokuSegmentMutationOperator mutationOperator = new SudokuSegmentMutationOperator(conf);
+                //postotak mutacije
+                //mutationOperator.setMutationRate(2);
+                //operator rekombinacije
+                conf.addGeneticOperator(mutationOperator);
+                conf.addGeneticOperator(new AveragingCrossoverOperator(conf));
+                //conf.addGeneticOperator(new CrossoverOperator(conf));
+                conf.setKeepPopulationSizeConstant(true);
+                conf.setPreservFittestIndividual(false);
                 conf.setFitnessFunction(segmentFit);
 
                 Gene[] genesSeg = new Gene[BROJ_SEGMENATA];
@@ -191,7 +150,6 @@ public class Main {
                 for (int i = 0; i < NUMBER_OF_EVOLUTIONS; i++) {
                     bestSolutionSoFar = populationSegment.getFittestChromosome();
                     populationSegment.evolve();
-
                 }
 
                 int[] tempPolje = new int[BROJ_SEGMENATA];
@@ -214,12 +172,6 @@ public class Main {
 
                 System.out.println();
             }
-			/*
-			 * Time += System.currentTimeMillis();
-			 *
-			 * System.out.println("\nUkupno vrijeme trajanja : " + ((double)
-			 * Time / 1000) + " sekundi");
-			 */
             System.out.println("Završeno traženje svih segmenata sudoku krizaljke!\n");
             System.out.println("Traženje ispravnog redoslijeda segmenata u sudoku krizaljci:");
 
@@ -231,7 +183,7 @@ public class Main {
 
             for (int i = 0; i < NUMBER_OF_EVOLUTIONS; i++) {
                 bestSolutionSoFar = populationSudoku.getFittestChromosome();
-                System.out.print("\nRješenje (fitness) nakon " + (i + 1) + ". evolucije: ");
+                System.out.print("\nRješenje (fitness) nakon " + (i + 1) + ". evolucije: \n");
                 printSolution(bestSolutionSoFar, BROJ_SEGMENATA);
                 populationSudoku.evolve();
                 System.out.println();
@@ -256,15 +208,6 @@ public class Main {
             Time += System.currentTimeMillis();
 
             System.out.println("\nUkupno vrijeme trajanja : " + ((double) Time / 1000) + " sekundi");
-            // USPOREDBA ISPRAVNOG SUDOKUA SA RIJEŠENIM
-			/*
-			 * for (SudokuSegment seg: segmentPoljePravilno)
-			 * seg.ispisiSegment();
-			 *
-			 * System.out.println();
-			 *
-			 * for (SudokuSegment seg: tempSeg) seg.ispisiSegment();
-			 */
         } catch (InvalidConfigurationException e) {
             e.printStackTrace();
         }
@@ -290,14 +233,14 @@ public class Main {
     }
 
     private static void printSolution(IChromosome solution, int length) {
-		/*SudokuSegment tempSeg;
+		SudokuSegment tempSeg;
 
 		for (int i = 0; i < solution.size(); i++) {
 			tempSeg = ((SudokuSegment) solution.getGene(i));
 			tempSeg.ispisiSegment();
 			if ((i + 1) % length == 0)
 				System.out.println();
-		}*/
+		}
 
         System.out.print(solution.getFitnessValue());
     }

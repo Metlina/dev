@@ -1,7 +1,4 @@
-import org.jgap.Gene;
-import org.jgap.GeneticOperator;
-import org.jgap.IChromosome;
-import org.jgap.Population;
+import org.jgap.*;
 
 import java.util.List;
 import java.util.Random;
@@ -12,9 +9,14 @@ import java.util.Random;
 public class SudokuSegmentMutationOperator implements GeneticOperator{
 
     private int brojSegmenta;
+    private Configuration configuration;
 
     public SudokuSegmentMutationOperator(){
 
+    }
+
+    public SudokuSegmentMutationOperator(Configuration configuration){
+        this.configuration = configuration;
     }
 
     public SudokuSegmentMutationOperator(int brojSegmenta){

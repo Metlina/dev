@@ -95,4 +95,11 @@ public class SudokuSegment extends BaseGene implements Gene, Serializable {
                 return true;
         return true;
     }
+
+    public void ispisiSegment(){
+        for (int broj : this.segment)
+            System.out.print(broj + ", ");
+
+        System.out.println();
+    }
 }
