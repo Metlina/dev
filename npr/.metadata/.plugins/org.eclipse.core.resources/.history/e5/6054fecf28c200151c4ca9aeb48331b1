@@ -1,0 +1,128 @@
+FUNCTION_BLOCK
+
+VAR_INPUT
+	kihanje : REAL;
+	kasljanje : REAL;
+	grlobolja : REAL;
+	otezano_disanje : REAL;
+	glavobolja : REAL;
+	visina_temperature : REAL;
+	bol_u_plucima : REAL;
+	krvav_ispljuvak : REAL;
+	suzenje : REAL;
+	promuklost : REAL;
+	hripanje : REAL;
+	zacepljen_nos : REAL;
+	gubitak_apetita : REAL;
+	slabost_tijela : REAL;
+END_VAR
+
+VAR_OUTPUT
+	decision : REAL;
+END_VAR
+
+FUZZIFY kihanje
+	TERM povremeno := 
+	TERM cesto := 
+	TERM jako_cesto := 
+END_FUZZIFY
+
+FUZZIFY kasljanje
+	TERM prokutivno :=  //sluz izbacujes
+	TERM neproduktivno :=
+END_FUZZIFY
+
+FUZZIFY grlobolja
+	TERM 
+END_FUZZIFY
+
+FUZZIFY otezano_disanje
+	TERM jako :=
+END_FUZZIFY
+
+FUZZIFY glavobolja
+	TERM slaba :=
+	TERM umjerena :=
+	TERM jaka :=
+END_FUZZIFY
+
+FUZZIFY visina_temperature
+	TERM 37 :=
+	TERM 38 :=
+	TERM 39 :=
+	TERM 40 :=
+	TERM 41 :=
+END_FUZZIFY
+
+FUZZIFY bol_u_plucima
+	TERM slaba :=
+	TERM umjerena :=
+	TERM jaka :=
+END_FUZZIFY
+
+FUZZIFY krvav_ispljuvak
+	TERM povremeno := 
+	TERM cesto := 
+	TERM jako_cesto := 
+END_FUZZIFY
+
+FUZZIFY suzenje
+	TERM slabo :=
+	TERM srednje :=
+	TERM jako :=
+END_FUZZIFY
+
+FUZZIFY promuklost
+	TERM bez_pojavu_boli :=
+	TERM uz_pojavu_boli :=
+END_FUZZIFY
+
+FUZZIFY hripanje
+	TERM tiho :=
+	TERM srednje :=
+	TERM glasno :=
+END_FUZZIFY
+
+FUZZIFY zacepljen_nos
+	TERM jedna_nosnica :=
+	TERM obe_nosnice :=
+END_FUZZIFY
+
+FUZZIFY gubitak_apetita
+	TERM stalan :=
+	TERM povremen :=
+END_FUZZIFY
+
+FUZZIFY slabost_tijela
+	TERM parcijalna :=
+	TERM potpuna :=
+END_FUZZIFY
+
+
+DEFUZZIFY odluka
+	TERM gripa := (0, 0) 
+	TERM prehlada := (0, 0) 
+	TERM akutni_bronhitis := (0, 0) 
+	TERM kronicni_bronhitis := (0, 0) 
+	TERM upala_pluca := (0, 0) 
+	TERM rak_pluca := (0, 0) 
+	TERM tuberkuloza := (0, 0) 
+	TERM rak_grla := (0, 0) 
+	TERM upala_angina := (0, 0) 
+	TERM zacepljenost_disnih_puteva := (0, 0) 
+	TERM streptokok := (0, 0) //bakterijska infekcija
+	METHOD : COG;
+	DEFAULT := 0;
+END_DEFUZZIFY
+
+RULEBLOCK bolesti_pravila
+
+AND : MIN;
+OR : MAX;
+ACT : MIN;
+ACCU : MAX;
+
+	RULE 1 :
+END_RULEBLOCK
+
+END_FUNCTION_BLOCK

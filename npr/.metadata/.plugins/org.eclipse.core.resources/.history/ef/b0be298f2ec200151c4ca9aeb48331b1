@@ -1,0 +1,29 @@
+package nesto;
+
+import net.sourceforge.jFuzzyLogic.FIS;
+
+public class Glavna {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String fileName = "fcl/fatoteka.fcl";
+		FIS fis = FIS.load(fileName, true);
+		if (fis == null) {
+			System.err.println("Can't load file: '" + fileName + "'");
+			return;
+		}
+		fis.chart();
+		fis.setVariable("otezano_disanje", 10);
+		fis.setVariable("suzenje", 5);
+		fis.setVariable("grlobolja", 9);
+		fis.evaluate();
+		fis.getVariable("odluka").chartDefuzzifier(true);
+		System.out.println(fis);
+		System.out.println("REZULTAT:");
+		System.out.println(fis.getVariable("odluka").getValue());
+		for (Rule r : fis.getFunctionBlock("job_chooser").getFuzzyRuleBlock("bolesti_disnih_puteva").getRules()) {
+			System.out.println(r);
+		}
+	}
+
+}

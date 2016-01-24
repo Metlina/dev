@@ -1,0 +1,140 @@
+FUNCTION_BLOCK bolesti_disnih_puteva
+
+VAR_INPUT
+	kihanje : REAL;
+	kasljanje : REAL;
+	grlobolja : REAL;
+	otezano_disanje : REAL;
+	glavobolja : REAL;
+	visina_temperature : REAL;
+	bol_u_plucima : REAL;
+	krvav_ispljuvak : REAL;
+	suzenje : REAL;
+	promuklost : REAL;
+	hripanje : REAL;
+	zacepljen_nos : REAL;
+	gubitak_apetita : REAL;
+	slabost_tijela : REAL;
+END_VAR
+
+VAR_OUTPUT
+	odluka : REAL;
+END_VAR
+
+FUZZIFY kihanje
+	TERM povremeno := (0, 1) (4, 0);
+	TERM cesto := (3, 0) (5, 1) (8, 0);
+	TERM jako_cesto := (7, 0) (10, 1);
+END_FUZZIFY
+
+FUZZIFY kasljanje
+	TERM neproduktivno :=  (0, 1) (4, 0);
+	TERM produktivno := (7, 0) (10, 1);
+END_FUZZIFY
+
+FUZZIFY grlobolja
+	TERM slaba := (0, 1) (4, 0);
+	TERM umjerena := (3, 0) (5, 1) (8, 0);
+	TERM jaka := (7, 0) (10, 1);
+END_FUZZIFY
+
+FUZZIFY otezano_disanje
+	TERM slabo := (0, 1) (4, 0);
+	TERM umjereno := (3, 0) (5, 1) (8, 0);
+	TERM jako := (7, 0) (10, 1);
+END_FUZZIFY
+
+FUZZIFY glavobolja
+	TERM slaba := (0, 1) (4, 0);
+	TERM umjerena := (3, 0) (5, 1) (8, 0);
+	TERM jaka := (7, 0) (10, 1);
+END_FUZZIFY
+
+FUZZIFY visina_temperature
+	TERM trideset_sedam := (0, 0) (1, 1) (2, 0);
+	TERM trideset_osam := (2, 0) (3, 1) (4, 0);
+	TERM trideset_devet := (4, 0) (5, 1) (6, 0);
+	TERM cetrdeset := (6, 0) (7, 1) (8, 0);
+	TERM cetrdeset_jedan := (8, 0) (9, 1) (10, 0);
+END_FUZZIFY
+
+FUZZIFY bol_u_plucima
+	TERM slaba := (0, 1) (4, 0);
+	TERM umjerena := (3, 0) (5, 1) (8,0);
+	TERM jaka := (7, 0) (10, 1);
+END_FUZZIFY
+
+FUZZIFY krvav_ispljuvak
+	TERM povremeno := (0, 1) (4, 0);
+	TERM cesto := (3, 0) (5, 1) (8,0);
+	TERM jako_cesto := (7, 0) (10, 1);
+END_FUZZIFY
+
+FUZZIFY suzenje
+	TERM slabo := (0, 1) (4, 0);
+	TERM srednje := (3, 0) (5, 1) (8,0);
+	TERM jako := (7, 0) (10, 1);
+END_FUZZIFY
+
+FUZZIFY promuklost
+	TERM bez_pojavu_boli := (0, 1) (0, 2) (4, 0);
+	TERM uz_pojavu_boli := (7, 0) (10, 1);
+END_FUZZIFY
+
+FUZZIFY hripanje
+	TERM tiho := (0, 1) (4, 0);
+	TERM srednje := (3, 0) (5, 1) (8,0);
+	TERM glasno := (7, 0) (10, 1);
+END_FUZZIFY
+
+FUZZIFY zacepljen_nos
+	TERM jedna_nosnica := (0, 1) (0, 2) (4, 0);
+	TERM obe_nosnice := (7, 0) (10, 1);
+END_FUZZIFY
+
+FUZZIFY gubitak_apetita
+	TERM stalan := (0, 1) (0, 2) (4, 0);
+	TERM povremen := (7, 0) (10, 1);
+END_FUZZIFY
+
+FUZZIFY slabost_tijela
+	TERM parcijalna := (0, 1) (0, 2) (4, 0);
+	TERM potpuna := (7, 0) (10, 1);
+END_FUZZIFY
+
+
+DEFUZZIFY odluka
+	TERM gripa := (0, 0) (2.5, 1) (5, 0);
+	TERM prehlada := (5, 0) (7.5, 1) (10, 0);
+	TERM bronhitis := (10, 0) (12.5, 1) (15, 0);
+	TERM upala_pluca := (15, 0) (17.5, 1) (20, 0);
+	TERM rak_pluca := (20, 0) (22.5, 1) (25, 0);
+	TERM tuberkuloza := (25, 0) (27.5, 1) (30, 0);
+	TERM rak_grla := (30, 0) (32.5, 1) (35, 0);
+	TERM upala_angina := (35, 0) (37.5, 1) (40, 0);
+	TERM zacepljenost_disnih_puteva := (40, 0) (42.5, 1) (45, 0);
+	TERM alergija := (45, 0) (47.5, 1) (50, 0);
+	METHOD : COG;
+	DEFAULT := 0;
+END_DEFUZZIFY
+
+RULEBLOCK bolesti_pravila
+
+AND : MIN;
+OR : MAX;
+ACT : MIN;
+ACCU : MAX;
+
+	RULE 1 : IF kasljanje IS cesto OR kasljanje IS jako_cesto OR promuklost IS uz_pojavu_boli OR grlobolja IS jaka THEN odluka IS gripa;
+	RULE 2 : IF kasljanje IS povremeno OR promuklost IS bez_pojavu_boli OR suzenje IS slabo OR grlobolja IS slaba THEN odluka IS prehlada;
+	RULE 3 : IF otezano_disanje IS jako AND hripanje IS glasno AND bol_u_plucima IS jaka THEN odluka IS bronhitis;
+	RULE 4 : IF visina_temperature IS cetrdeset AND otezano_disanje IS jako THEN odluka IS upala_pluca;
+	RULE 5 : IF kasljanje IS neproduktivno AND otezano_disanje IS jako AND krvav_ispljuvak IS cesto OR krvav_ispljuvak IS jako_cesto AND bol_u_plucima IS jaka THEN odluka IS rak_pluca;
+	RULE 6 : IF krvav_ispljuvak IS jako_cesto AND slabost_tijela IS parcijalna THEN odluka IS tuberkuloza;
+	RULE 7 : IF kasljanje IS neproduktivno AND gubitak_apetita IS povremen AND slabost_tijela IS potpuna THEN odluka IS rak_grla;
+	RULE 8 : IF gubitak_apetita IS stalan AND grlobolja IS umjerena AND visina_temperature IS trideset_osam THEN odluka IS upala_angina;
+	RULE 9 : IF zacepljen_nos IS jedna_nosnica OR zacepljen_nos IS obe_nosnice THEN odluka IS zacepljenost_disnih_puteva;
+	RULE 10 : IF kihanje IS jako_cesto OR suzenje IS jako THEN odluka IS alergija;
+END_RULEBLOCK
+
+END_FUNCTION_BLOCK
