@@ -2,6 +2,10 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" Runat="Server">
     
+    <hr/>
+    <hr/>
+    <hr/>
+
     <h1>ABOUT VIEW</h1>
 
 </asp:Content>

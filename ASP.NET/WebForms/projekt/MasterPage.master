@@ -11,8 +11,7 @@
 
     <link rel="stylesheet" href="css/metro-bootstrap.css" />
     <link rel="stylesheet" href="css/metro-bootstrap.min.css" />
-<%--    <script type="text/javascript" src="Scripts/metro-ui/metro.min.js"></script>
-    <script type="text/javascript" src="Scripts/metro-ui/jquery.ui.widget.js"></script>--%>
+    <script type="text/javascript" src="Scripts/jquery-1.10.2.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -28,27 +27,33 @@
                     <a class="navbar-brand" runat="server" href="~/">Printer d.o.o.</a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About.aspx">About</a></li>
-                        <li><a runat="server" href="~/Login.aspx">Login</a></li>
-                    </ul>
-                    <%--<asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
+                            <ul class="nav navbar-nav">
+                                <li><a runat="server" href="~/About.aspx">About</a></li>
+                                <li><a runat="server" href="~/Contact.aspx">Contact</a></li>
+                            </ul>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                                <li><a runat="server" href="~/Login.aspx">Log in</a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
+                            <ul class="nav navbar-nav">
+                                <li><a runat="server" href="~/">All printers</a></li>
+                                <li><a runat="server" href="~/NewPrinter.aspx">Add new printer</a></li>
+                                <li><a runat="server" href="~/Storage.aspx">Storage</a></li>
+                            </ul>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %>!</a></li>
+                                <%--<li>
+                                    <asp:LoginName ID="LoginName" runat="server" FormatString="Hello {0}" ForeColor="White" Font-Italic="True" />
+                                </li>--%>
+                                <li><a runat="server" href="~/NewUser.aspx">Add new user</a></li>
                                 <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                    <asp:LoginStatus ID="LoginStatus" runat="server" LoginText="Login" LogoutText="Logout" />
                                 </li>
                             </ul>
                         </LoggedInTemplate>
-                    </asp:LoginView>--%>
+                    </asp:LoginView>
                 </div>
             </div>
         </div>
