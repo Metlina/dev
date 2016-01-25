@@ -114,7 +114,7 @@ DEFUZZIFY odluka
 	TERM upala_angina := (35, 0) (37.5, 1) (40, 0);
 	TERM zacepljenost_disnih_puteva := (40, 0) (42.5, 1) (45, 0);
 	TERM alergija := (45, 0) (47.5, 1) (50, 0);
-	METHOD : COG;
+	METHOD : COGS;
 	DEFAULT := 0;
 END_DEFUZZIFY
 
@@ -131,7 +131,7 @@ ACCU : MAX;
 	RULE 6 : IF krvav_ispljuvak IS jako_cesto AND slabost_tijela IS parcijalna THEN odluka IS tuberkuloza;
 	RULE 7 : IF kasljanje IS neproduktivno AND gubitak_apetita IS povremen AND slabost_tijela IS potpuna THEN odluka IS rak_grla;
 	RULE 8 : IF gubitak_apetita IS stalan AND grlobolja IS umjerena AND visina_temperature IS trideset_osam THEN odluka IS upala_angina;
-	RULE 9 : IF zacepljen_nos IS obe_nosnice THEN odluka IS zacepljenost_disnih_puteva;
+	RULE 9 : IF zacepljen_nos IS jedna_nosnica OR zacepljen_nos IS obe_nosnice THEN odluka IS zacepljenost_disnih_puteva;
 	RULE 10 : IF kihanje IS jako_cesto AND suzenje IS jako THEN odluka IS alergija;
 END_RULEBLOCK
 

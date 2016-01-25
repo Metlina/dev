@@ -121,7 +121,7 @@ END_DEFUZZIFY
 RULEBLOCK bolesti_pravila
 AND : MIN;
 OR : MAX;
-ACT : MIN;
+ACT : PROD;
 ACCU : MAX;
 	RULE 1 : IF kasljanje IS neproduktivno AND promuklost IS uz_pojavu_boli AND grlobolja IS jaka THEN odluka IS gripa;
 	RULE 2 : IF kasljanje IS produktivno AND promuklost IS bez_pojavu_boli AND suzenje IS slabo AND grlobolja IS slaba THEN odluka IS prehlada;

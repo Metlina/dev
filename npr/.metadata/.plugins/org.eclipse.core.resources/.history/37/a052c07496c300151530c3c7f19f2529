@@ -122,7 +122,7 @@ RULEBLOCK bolesti_pravila
 AND : MIN;
 OR : MAX;
 ACT : MIN;
-ACCU : MAX;
+ACCU : ASUM;
 	RULE 1 : IF kasljanje IS neproduktivno AND promuklost IS uz_pojavu_boli AND grlobolja IS jaka THEN odluka IS gripa;
 	RULE 2 : IF kasljanje IS produktivno AND promuklost IS bez_pojavu_boli AND suzenje IS slabo AND grlobolja IS slaba THEN odluka IS prehlada;
 	RULE 3 : IF otezano_disanje IS jako AND hripanje IS glasno AND bol_u_plucima IS jaka THEN odluka IS bronhitis;

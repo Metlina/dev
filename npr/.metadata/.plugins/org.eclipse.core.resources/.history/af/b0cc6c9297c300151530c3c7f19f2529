@@ -114,7 +114,7 @@ DEFUZZIFY odluka
 	TERM upala_angina := (35, 0) (37.5, 1) (40, 0);
 	TERM zacepljenost_disnih_puteva := (40, 0) (42.5, 1) (45, 0);
 	TERM alergija := (45, 0) (47.5, 1) (50, 0);
-	METHOD : COG;
+	METHOD : LM;
 	DEFAULT := 0;
 END_DEFUZZIFY
 
@@ -122,7 +122,7 @@ RULEBLOCK bolesti_pravila
 AND : MIN;
 OR : MAX;
 ACT : MIN;
-ACCU : MAX;
+ACCU : BSUM;
 	RULE 1 : IF kasljanje IS neproduktivno AND promuklost IS uz_pojavu_boli AND grlobolja IS jaka THEN odluka IS gripa;
 	RULE 2 : IF kasljanje IS produktivno AND promuklost IS bez_pojavu_boli AND suzenje IS slabo AND grlobolja IS slaba THEN odluka IS prehlada;
 	RULE 3 : IF otezano_disanje IS jako AND hripanje IS glasno AND bol_u_plucima IS jaka THEN odluka IS bronhitis;

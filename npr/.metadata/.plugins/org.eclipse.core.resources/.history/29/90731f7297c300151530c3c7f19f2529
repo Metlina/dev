@@ -114,7 +114,7 @@ DEFUZZIFY odluka
 	TERM upala_angina := (35, 0) (37.5, 1) (40, 0);
 	TERM zacepljenost_disnih_puteva := (40, 0) (42.5, 1) (45, 0);
 	TERM alergija := (45, 0) (47.5, 1) (50, 0);
-	METHOD : COG;
+	METHOD : RM;
 	DEFAULT := 0;
 END_DEFUZZIFY
 

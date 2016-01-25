@@ -18,8 +18,8 @@ public class Glavna {
 		//JFuzzyChart.get().chart(fis);
 		FunctionBlock fb = fis.getFunctionBlock("bolesti_disnih_puteva");
 		
-		fb.setVariable("kihanje", 8);
-		fb.setVariable("suzenje", 9);
+		fb.setVariable("kihanje", 0);
+		fb.setVariable("suzenje", 0);
 		fb.setVariable("kasljanje", 0);
 		fb.setVariable("grlobolja", 0);
 		fb.setVariable("promuklost", 0);
@@ -31,8 +31,8 @@ public class Glavna {
 		fb.setVariable("hripanje", 0);
 		fb.setVariable("zacepljen_nos", 0);
 		fb.setVariable("gubitak_apetita", 0);
-		fb.setVariable("slabost_tijela", 0);
-		fb.setVariable("krvav_ispljuvak", 0);
+		fb.setVariable("slabost_tijela", 5);
+		fb.setVariable("krvav_ispljuvak", 9);
 		
 		fb.evaluate();
 		fb.getVariable("odluka").defuzzify();
