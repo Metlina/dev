@@ -8,6 +8,7 @@
                 <div class="form-horizontal">
                     <hr/>
                     <hr/>
+                    <hr/>
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
                             <asp:Login ID="Login1" runat="server" DestinationPageUrl="~/Default.aspx" OnAuthenticate="Login_OnAuthenticate" />

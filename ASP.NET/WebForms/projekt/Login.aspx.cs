@@ -7,7 +7,10 @@ public partial class Login : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (User.Identity.IsAuthenticated)
+        {
+            Response.Redirect("~/LandingPage.aspx");
+        }
     }
 
     protected void Login_OnAuthenticate(object sender, AuthenticateEventArgs e)

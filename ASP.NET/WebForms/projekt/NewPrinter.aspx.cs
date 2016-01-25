@@ -44,6 +44,8 @@ public partial class NewPrinter : System.Web.UI.Page
                 query.Parameters.AddWithValue("@paper", paper);
 
                 query.ExecuteNonQuery();
+
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Printer was added successfuly')", true);
             }
             catch (Exception ex)
             {

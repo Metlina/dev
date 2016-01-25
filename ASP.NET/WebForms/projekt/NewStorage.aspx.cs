@@ -3,7 +3,7 @@ using System.Configuration;
 using System.Data.OleDb;
 using System.Diagnostics;
 
-public partial class NewUser : System.Web.UI.Page
+public partial class NewStorage : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -13,10 +13,12 @@ public partial class NewUser : System.Web.UI.Page
         }
     }
 
-    protected void AddNewUser_OnClick(object sender, EventArgs e)
+    protected void AddNewStorageData_OnClick(object sender, EventArgs e)
     {
-        var username = this.UserName.Text;
-        var password = this.Password.Text;
+        var paper = this.Paper.Text;
+        var ink = this.Ink.Text;
+        var parts = this.Parts.Text;
+        var mark = this.Mark.Text;
 
         using (
             var connection = new OleDbConnection(ConfigurationManager.ConnectionStrings["konekcijaNaBazu"].ConnectionString)
@@ -27,15 +29,17 @@ public partial class NewUser : System.Web.UI.Page
                 connection.Open();
                 var query =
                     new OleDbCommand(
-                        "INSERT into users ([username], [password]) VALUES (@username, @password)",
+                        "INSERT into storage ([paper], [ink], [parts], [mark]) VALUES (@paper, @ink, @parts, @mark)",
                         connection);
 
-                query.Parameters.AddWithValue("@username", username);
-                query.Parameters.AddWithValue("@password", password);
+                query.Parameters.AddWithValue("@paper", paper);
+                query.Parameters.AddWithValue("@ink", ink);
+                query.Parameters.AddWithValue("@parts", parts);
+                query.Parameters.AddWithValue("@mark", mark);
 
                 query.ExecuteNonQuery();
 
-                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('User was added successfuly')", true);
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Materials were added successfuly')", true);
             }
             catch (Exception ex)
             {
